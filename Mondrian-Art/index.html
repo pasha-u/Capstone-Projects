@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Mondrian Project</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 125px 350px 50px;
+            grid-template-rows: 230px 190px 55px 65px ;
+            height: 600px;
+            width: 559px;
+            background-color: rgb(0, 0, 0);
+            gap: 17px;
+        }
+
+        .itme {
+            background-color: aliceblue;
+        }  
+
+        .red {
+            background-color: red;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .blue{
+            background-color: rgb(13, 87, 133);
+            grid-row: span 2;
+        }
+
+        .grey3 {
+            grid-row: span 2;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="itme grey1"></div>
+    <div class="itme red"></div>
+
+    <div class="itme grey2"></div>
+
+    <div class="itme blue"></div>
+    <div class="itme grey3"></div>
+    <div class="itme grey4"></div>
+    <div class="itme yellow"></div>
+   </div> 
+</body>
+</html>
