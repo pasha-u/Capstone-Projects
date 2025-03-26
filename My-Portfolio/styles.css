@@ -1,0 +1,91 @@
+.top-container {
+    background-color: #C7B8E8;
+    position: relative;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.title-text{
+    margin-top: 120px;
+}
+
+.middle-container {
+    margin: 100px 0;
+  
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body  {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", Sans;
+}
+
+h1 {
+    color: #7d5dc2 ;
+    font-size: 4.645rem;
+    margin: 50px auto 0 auto;
+    font-family: "Satisfy", static;
+    word-spacing: 20px;
+}
+
+
+span {
+    color: #bf67c2;
+}
+h3{
+       color:#7d5dc2 ;
+ 
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 30px auto 0 auto;
+    font-family: "Sacramento" ;
+    padding-bottom: 10px;
+    
+}
+
+.pink {
+    position: absolute;
+    top: 0;
+    left: 0px;
+
+}
+
+.blue {
+    position: absolute;
+    top: 20;
+    right: 5px;
+}
+
+
+hr {
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+p {
+    display: block;
+    font-size: 1.5rem;
+
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+
+.parent {
+    margin-top: none;
+    display: grid;
+
+}
