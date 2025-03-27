@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+    <div class="container">
+      <img class="image" src="/styles/images/penguin.png" alt="" height="75px" width="75px" float="left">
+
+      <% if (posts.length > 20) { %>
+      <p>Too many posts!</p>
+
+    <% } else if (posts.length > 0) { %>
+
+      <h1 >Here are your Posts:</h1>
+
+      <% posts.forEach(post => { %>
+
+        <p ><%= post %></p>
+        <div class="btns">
+        <form action="/edit/<%= posts.indexOf(post) %>" method="GET">
+          <button type="submit">Edit</button>
+        </form> 
+        
+        <form action="/delete/<%= posts.indexOf(post) %>" method="POST">
+          <button class="delete" type="submit">Delete</button>
+        </form>
+      </div>
+      <% }) %>
+    <% } else { %>
+      <p>No posts yet.</p>
+    <% } %>
+    
+    <form action="/submit" method="POST">
+      <h1 >Write your Post here:</h1>
+      <textarea name="postContent" required rows="8" cols="50"></textarea> 
+      <button type="submit">Submit</button>
+    </form>
+    
+  </div>
+

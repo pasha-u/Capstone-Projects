@@ -1,0 +1,85 @@
+html,
+body {
+    background: rgb(149,59,213);
+    background: linear-gradient(90deg, rgba(149,59,213,1) 0%, rgba(198,107,212,1) 35%, rgba(10,196,233,1) 100%);
+    color: #9c40aa;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+  font-family: math;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #FEF9FF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+button {
+    background-color: #f4c9ff; 
+    color: #9c40aa;  
+    padding: 10px 15px ; 
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;  
+    display: inline;
+    margin: 0 10px 0 10px;
+
+  }
+  
+  .delete {
+    background-color: #f4c9ff;
+    color: #9c40aa;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+ 
+  }
+  
+  .delete:hover {
+    background-color: #f58cc1;
+  }
+  
+  button:hover {
+    background-color: #97d9e6;  /* Change color when hovered */
+  }
+  
+.btns{
+  display: flex;
+}  
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100&display=swap');
+
+.logo{
+  display: flex;
+  color: #fbf7ff;
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image{
+  height:"50px";
+   width:"50px" ;
+  float: left; 
+}
